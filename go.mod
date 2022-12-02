@@ -1,4 +1,4 @@
-module github.com/mfo444/go-stripe
+module github.com/mfo444/go-stripe.git
 
 go 1.17
 

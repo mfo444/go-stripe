@@ -1,4 +1,6 @@
-SET STRIPE_SECRET="sk_test_KEY STRIPE_KEY=pk_test_KEY"
-SET STRIPE_KEY="whateverthekeyis"
-go run .\cmd\api
+SET STRIPE_SECRET=sk_test_43qtefravrqt4tddasda
+SET STRIPE_KEY=sk_test_sdadkaskcourse
+go build -o dist/gostripe.exe ./cmd/web
+go build -o dist/gostripe-api.exe ./cmd/api
 go run .\cmd\web
+go run .\cmd\api

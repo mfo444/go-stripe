@@ -117,6 +117,7 @@
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
+            type: 'json',
             body: JSON.stringify(payload),
         }
 
@@ -126,6 +127,7 @@
                 let data;
                 try {
                     data = JSON.parse(response);
+                    console.log(response);
                     stripe.confirmCardPayment(data.client_secret, {
                         payment_method: {
                             card: card,

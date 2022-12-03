@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/mfo444/go-stripe.git/internal/cards"
+	"github.com/mfo444/go-stripe/internal/cards"
 )
 
 type stripePayload struct {
